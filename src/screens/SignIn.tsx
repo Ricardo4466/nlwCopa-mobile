@@ -9,7 +9,7 @@ export function SignIn() {
 
   const { signIn, user } = useAuth()
 
-  console.log('DADOS DO USÙARIO =>', user);
+  // console.log('DADOS DO USÙARIO =>', user);
 
   return (
     <Center flex={1} bgColor="gray.900" p={7}>
