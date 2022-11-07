@@ -3,6 +3,7 @@ import { PlusCircle, SoccerBall } from "phosphor-react-native"
 import { Platform } from 'react-native'
 import { useTheme } from "native-base"
 
+import { Datails } from '../screens/Datails'
 import { Pools } from '../screens/Pools'
 import { Find } from '../screens/Find'
 import { New } from '../screens/New'
@@ -35,7 +36,6 @@ export function AppRoutes() {
     >
       <Screen
         name='new'
-
         component={New}
         options={{
           tabBarIcon: ({ color }) => <PlusCircle color={color} size={size} />,
@@ -54,6 +54,12 @@ export function AppRoutes() {
       <Screen
         name='find'
         component={Find}
+        options={{ tabBarButton: () => null }}
+      />
+
+      <Screen
+        name='datails'
+        component={Datails}
         options={{ tabBarButton: () => null }}
       />
     </Navigator>
